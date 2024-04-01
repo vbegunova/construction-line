@@ -1,0 +1,151 @@
+@font-face {
+  font-family: "NeutralFace";
+  src: url("../fonts/NeutralFaceRegular.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "VisueltPro";
+  src: url("../fonts/VisueltPro-Light.woff") format("woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "VisueltPro";
+  src: url("../fonts/VisueltPro-Regular.woff") format("woff");
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  /* color: white; */
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 1440px;
+  padding-left: 102px;
+  padding-right: 102px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.header {
+  width: 100%;
+  padding-top: 55px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header .logo {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.header .logo-main {
+  font-family: "NeutralFace", sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+  letter-spacing: -0.1;
+}
+
+.header .logo-text {
+  font-family: "VisueltPro", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: -0.4;
+  width: 80px;
+}
+
+.header .menu .list {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.header .menu .list .item p {
+  font-family: "VisueltPro";
+  font-weight: 400;
+  letter-spacing: -0.6;
+  text-transform: uppercase;
+}
+
+.header .contacts {
+  display: flex;
+  gap: 17px;
+}
+
+.header .soc-media-list {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.header .soc-media-list .item {
+  display: block;
+  width: 36px;
+  height: 36px;
+  background-color: #111;
+  border-radius: 50%;
+}
+
+.header .contacts .phone-number {
+  color: #111;
+  margin-top: 10px;
+  font-family: "VisueltPro", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: -0.6;
+}
+
+.hero {
+  padding-top: 168px;
+  padding-bottom: 148px;
+  background-image: url("../images/hero-background-desktop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero .title {
+  font-family: "NeutralFace";
+  font-weight: 400;
+  font-size: 85px;
+  width: 515px;
+  letter-spacing: -0.4;
+  line-height: 1;
+  color: #fff;
+}
