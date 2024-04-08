@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,34 +10,66 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="logo">
-          <p class="logo-main">Line</p>
-          <p class="logo-text">Lorem ipsum dolor sit</p>
-        </div>
+        <a href="./index.html" class="logo">
+          <img
+            class="logo-image"
+            src="./images/logo-desktop.png"
+            alt=""
+            width="188"
+            height="61"
+          />
+        </a>
         <nav class="menu">
           <ul class="list">
             <li class="item">
-              <p>Про компанію</p>
+              <a href="./about-company.html">Про компанію</a>
             </li>
             <li class="item">
-              <p>Каталог</p>
+              <a href="./catalog.html">Каталог</a>
             </li>
             <li class="item">
-              <p>Блог</p>
+              <a href="./news.html">Блог</a>
             </li>
             <li class="item">
-              <p>Контакти</p>
+              <a href="./news.html">Контакти</a>
             </li>
           </ul>
         </nav>
         <div class="contacts">
           <ul class="soc-media-list">
-            <li><a href="#" class="item"></a></li>
-            <li><a href="#" class="item"></a></li>
-            <li><a href="#" class="item"></a></li>
+            <li>
+              <a href="#" class="item">
+                <svg class="soc-icon">
+                  <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item">
+                <svg class="soc-icon">
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item">
+                <svg class="soc-icon telegram">
+                  <use href="./images/sprite.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
           <a href="#" class="phone-number">+38 98 000 0000</a>
         </div>
+        <button
+          class="menu-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="burger" width="16" height="12">
+            <use href="./images/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -51,7 +83,10 @@
             </p>
             <div class="line"></div>
           </div>
-          <button class="button">Отримати<br/> пропозицію</button>
+          <button class="button">
+            Отримати<br />
+            пропозицію
+          </button>
         </div>
       </section>
 
@@ -60,15 +95,33 @@
           <div class="about-us_text-box">
             <div class="about-us_title-box">
               <h2 class="title">Лінія будівництва - це визнаний Лідер</h2>
-              <p class="description">У сфері будівництва та продажу житлових об'єктів у Києві та області.</p>
+              <p class="description">
+                У сфері будівництва та продажу житлових об'єктів у Києві та
+                області.
+              </p>
             </div>
-            <p class="text first">Наша компанія славиться своїм бездоганним підходом до кожного проекту, де кожна деталь має значення. Ми спеціалізуємося на створенні вишуканих житлових комплексів, котеджних містечок та дуплексів, які вражають своєю архітектурою та функціональністю.</p>
-            <p class="text second">Наша місія полягає в тому, щоб кожен клієнт відчував себе не лише власником житла, але й частиною великої спільноти, де комфорт, безпека та затишок - це не пусті слова, а реальність. Ми прагнемо не лише будувати об'єкти, але й створювати простір, де люди можуть розвиватися, спілкуватися та насолоджуватися життям.</p>
+            <p class="text first">
+              Наша компанія славиться своїм бездоганним підходом до кожного
+              проекту, де кожна деталь має значення. Ми спеціалізуємося на
+              створенні вишуканих житлових комплексів, котеджних містечок та
+              дуплексів, які вражають своєю архітектурою та функціональністю.
+            </p>
+            <p class="text second">
+              Наша місія полягає в тому, щоб кожен клієнт відчував себе не лише
+              власником житла, але й частиною великої спільноти, де комфорт,
+              безпека та затишок - це не пусті слова, а реальність. Ми прагнемо
+              не лише будувати об'єкти, але й створювати простір, де люди можуть
+              розвиватися, спілкуватися та насолоджуватися життям.
+            </p>
           </div>
-          <div class="images-box">
-            <img class="image" src="./images/about-us-first.jpg" alt="">
-            <img class="image" src="./images/about-us-second.jpg" alt="">
-          </div>
+        </div>
+
+        <div class="images-box">
+          <img class="image" src="./images/home/about-us-first.jpg" alt="" />
+          <img class="image" src="./images/home/about-us-second.jpg" alt="" />
+        </div>
+
+        <div class="container">
           <div class="numbers-box">
             <ul class="list">
               <li class="item">
@@ -94,45 +147,49 @@
 
       <section class="catalog">
         <div class="container">
-          <h2 class="title">
-            Каталог будинків
-          </h2>
+          <h2 class="title">Каталог будинків</h2>
           <ul class="list">
             <li class="item">
-              <img class="image" src="./images/house-image.jpg" alt="">
-              <p class="house-name">Назва місцевості</p>
-              <div class="box">
-                <div class="info-box">
-                  <div class="price-box">
-                    <p class="price">Від 100 000$</p>
+              <a href="./object-details.html">
+                <img class="image" src="./images/home/house-image.jpg" alt="" />
+                <p class="house-name">Назва місцевості</p>
+                <div class="box">
+                  <div class="info-box">
+                    <div class="price-box">
+                      <p class="price">Від 100 000$</p>
+                    </div>
+                    <p class="square">150-260 кв м</p>
                   </div>
-                  <p class="square">150-260 кв м</p>
                 </div>
-              </div>
+              </a>
             </li>
             <li class="item">
-              <img class="image" src="./images/house-image.jpg" alt="">
-              <p class="house-name">Назва місцевості</p>
-              <div class="box">
-                <div class="info-box">
-                  <div class="price-box">
-                    <p class="price">Від 100 000$</p>
+              <a href="./object-details.html">
+                <img class="image" src="./images/home/house-image.jpg" alt="" />
+                <p class="house-name">Назва місцевості</p>
+                <div class="box">
+                  <div class="info-box">
+                    <div class="price-box">
+                      <p class="price">Від 100 000$</p>
+                    </div>
+                    <p class="square">150-260 кв м</p>
                   </div>
-                  <p class="square">150-260 кв м</p>
                 </div>
-              </div>
+              </a>
             </li>
             <li class="item">
-              <img class="image" src="./images/house-image.jpg" alt="">
-              <p class="house-name">Назва місцевості</p>
-              <div class="box">
-                <div class="info-box">
-                  <div class="price-box">
-                    <p class="price">Від 100 000$</p>
+              <a href="./object-details.html">
+                <img class="image" src="./images/home/house-image.jpg" alt="" />
+                <p class="house-name">Назва місцевості</p>
+                <div class="box">
+                  <div class="info-box">
+                    <div class="price-box">
+                      <p class="price">Від 100 000$</p>
+                    </div>
+                    <p class="square">150-260 кв м</p>
                   </div>
-                  <p class="square">150-260 кв м</p>
                 </div>
-              </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -141,14 +198,32 @@
       <section class="about-duplex">
         <div class="container">
           <div class="text-box">
-            <h2 class="title">Про дуплекси</h1>
-            <p class="description">Дуплекси — це винятковий вид житлових об'єктів, які здобувають все більшу популярність серед тих, хто шукає комбінацію стилю, простору та функціональності у своєму майбутньому домі. Ці особливі будівлі складаються з двох повністю окремих одиниць, кожна з яких має свої власні входи, приватний двір та навіть можливість розділити комунікації, надаючи власникам максимальний рівень приватності.</p>
+            <h2 class="title">Про дуплекси</h2>
+            <p class="description">
+              Дуплекси — це винятковий вид житлових об'єктів, які здобувають все
+              більшу популярність серед тих, хто шукає комбінацію стилю,
+              простору та функціональності у своєму майбутньому домі. Ці
+              особливі будівлі складаються з двох повністю окремих одиниць,
+              кожна з яких має свої власні входи, приватний двір та навіть
+              можливість розділити комунікації, надаючи власникам максимальний
+              рівень приватності.
+            </p>
           </div>
           <div class="subscription-box">
             <h3 class="subtitle">Що робить дуплекси такими привабливими?</h3>
-            <p class="description second">Дуплекси — це ідеальне рішення для тих, хто цінує приватність і доступність. По-перше, дуплекси забезпечують власникам відчуття особистого простору, оскільки кожен блок має свій власний вхід та приватний двір. По-друге, дуплекси від "Лінії Будівництва"  доступні за ціною квартири. Це означає, що ви можете придбати просторе та функціональне житло за ціною, яка приємно здивує. Власний дуплекс — це не лише мрія, але і доступна реальність, яку ви можете здійснити разом з нами.</p>
+            <p class="description second">
+              Дуплекси — це ідеальне рішення для тих, хто цінує приватність і
+              доступність. По-перше, дуплекси забезпечують власникам відчуття
+              особистого простору, оскільки кожен блок має свій власний вхід та
+              приватний двір. По-друге, дуплекси від "Лінії Будівництва"
+              доступні за ціною квартири. Це означає, що ви можете придбати
+              просторе та функціональне житло за ціною, яка приємно здивує.
+              Власний дуплекс — це не лише мрія, але і доступна реальність, яку
+              ви можете здійснити разом з нами.
+            </p>
           </div>
         </div>
+        <!-- <img class="about-image" src="./images/home/about-duplex-mobile.png" alt=""> -->
       </section>
 
       <section class="advantages">
@@ -159,42 +234,64 @@
               <p class="number">01</p>
               <div class="text">
                 <p class="item-title">Якість будівництва</p>
-                <p class="description">Наша компанія має бездоганну репутацію у сфері будівництва завдяки використанню найсучасніших технологій та високоякісних будівельних матеріалів.</p>
+                <p class="description">
+                  Наша компанія має бездоганну репутацію у сфері будівництва
+                  завдяки використанню найсучасніших технологій та високоякісних
+                  будівельних матеріалів.
+                </p>
               </div>
             </li>
             <li class="item">
               <p class="number">02</p>
               <div class="text">
                 <p class="item-title">Різноманітність об'єктів</p>
-                <p class="description">Ми пропонуємо широкий вибір житлових комплексів, котеджних містечок та дуплексів, які відповідають різним потребам та бюджетам наших клієнтів.</p>
+                <p class="description">
+                  Ми пропонуємо широкий вибір житлових комплексів, котеджних
+                  містечок та дуплексів, які відповідають різним потребам та
+                  бюджетам наших клієнтів.
+                </p>
               </div>
             </li>
             <li class="item">
               <p class="number">03</p>
               <div class="text">
                 <p class="item-title">Доступні ціни</p>
-                <p class="description">Наша компанія дбає про доступність своїх об'єктів, пропонуючи конкурентоспроможні ціни та спеціальні умови придбання.</p>
+                <p class="description">
+                  Наша компанія дбає про доступність своїх об'єктів, пропонуючи
+                  конкурентоспроможні ціни та спеціальні умови придбання.
+                </p>
               </div>
             </li>
             <li class="item">
               <p class="number">04</p>
               <div class="text">
                 <p class="item-title">Комфорт та безпека</p>
-                <p class="description">Наші будинки розроблені з урахуванням потреб майбутніх мешканців, забезпечуючи комфортне та безпечне життя в них.</p>
+                <p class="description">
+                  Наші будинки розроблені з урахуванням потреб майбутніх
+                  мешканців, забезпечуючи комфортне та безпечне життя в них.
+                </p>
               </div>
             </li>
             <li class="item">
               <p class="number">05</p>
               <div class="text">
                 <p class="item-title">Індивідуальний підхід</p>
-                <p class="description">Ми працюємо з кожним клієнтом індивідуально, враховуючи їхні побажання та потреби, щоб забезпечити найкращі умови для покупки житла.</p>
+                <p class="description">
+                  Ми працюємо з кожним клієнтом індивідуально, враховуючи їхні
+                  побажання та потреби, щоб забезпечити найкращі умови для
+                  покупки житла.
+                </p>
               </div>
             </li>
             <li class="item">
               <p class="number">06</p>
               <div class="text">
                 <p class="item-title">Підтримка та сервіс</p>
-                <p class="description">Після придбання будинку наша компанія забезпечує надійну підтримку та сервіс, гарантуючи задоволення від покупки та спокій наших клієнтів.</p>
+                <p class="description">
+                  Після придбання будинку наша компанія забезпечує надійну
+                  підтримку та сервіс, гарантуючи задоволення від покупки та
+                  спокій наших клієнтів.
+                </p>
               </div>
             </li>
           </ul>
@@ -203,14 +300,17 @@
 
       <section class="contact-us">
         <div class="container">
-          <h2 class="title">Lorem ipsum dolor sit consectetur adipiscing elit</h2>
-          <p class="description">Поділіться з нами своїм номером телефону, щоб ми могли залишатися на зв’язку</p>
+          <h2 class="title">
+            Lorem ipsum dolor sit consectetur adipiscing elit
+          </h2>
+          <p class="description">
+            Поділіться з нами своїм номером телефону, щоб ми могли залишатися на
+            зв’язку
+          </p>
           <form class="form">
-            <input class="form-input" type="text" placeholder="Ваше ім'я">
-            <input class="form-input" type="text" placeholder="Ваш телефон">
-            <button type="submit" class="submit-button">
-              Звернутися
-            </button>
+            <input class="form-input" type="text" placeholder="Ваше ім'я" />
+            <input class="form-input" type="text" placeholder="Ваш телефон" />
+            <button type="submit" class="submit-button">Звернутися</button>
           </form>
         </div>
       </section>
@@ -224,50 +324,82 @@
                 <h4 class="item-title">
                   Які терміни будівництва у вашої компанії?
                 </h4>
-                <button class="toogle-button" type="button">+</button>
+                <button class="toggle-button" type="button">
+                  <svg class="icon-toggle">
+                    <use href="./images/sprite.svg#icon-faq-arrow"></use>
+                  </svg>
+                </button>
               </div>
+              <div class="line"></div>
               <div class="item-answer">
                 <p class="answer-text">
-                  Терміни будівництва залежать від конкретного проєкту. Зазвичай ми намагаємося завершити будівництво в обумовлені терміни, проте деякі фактори, такі як погодні умови або затримки з постачанням матеріалів, можуть впливати на графік.
+                  Терміни будівництва залежать від конкретного проєкту. Зазвичай
+                  ми намагаємося завершити будівництво в обумовлені терміни,
+                  проте деякі фактори, такі як погодні умови або затримки з
+                  постачанням матеріалів, можуть впливати на графік.
+                </p>
+              </div>
+            </li>
+            <li class="item">
+              <div class="item-container">
+                <h4 class="item-title">Яка гарантія на будинки?</h4>
+                <button class="toggle-button" type="button">
+                  <svg class="icon-toggle">
+                    <use href="./images/sprite.svg#icon-faq-arrow"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="line"></div>
+              <div class="item-answer">
+                <p class="answer-text">
+                  Терміни будівництва залежать від конкретного проєкту. Зазвичай
+                  ми намагаємося завершити будівництво в обумовлені терміни,
+                  проте деякі фактори, такі як погодні умови або затримки з
+                  постачанням матеріалів, можуть впливати на графік.
                 </p>
               </div>
             </li>
             <li class="item">
               <div class="item-container">
                 <h4 class="item-title">
-                  Яка гарантія на будинки?
+                  Чи можна здійснити індивідуалізовані зміни у плануванні
+                  будинку?
                 </h4>
-                <button class="toogle-button" type="button">+</button>
+                <button class="toggle-button" type="button">
+                  <svg class="icon-toggle">
+                    <use href="./images/sprite.svg#icon-faq-arrow"></use>
+                  </svg>
+                </button>
               </div>
+              <div class="line"></div>
               <div class="item-answer">
                 <p class="answer-text">
-                  Терміни будівництва залежать від конкретного проєкту. Зазвичай ми намагаємося завершити будівництво в обумовлені терміни, проте деякі фактори, такі як погодні умови або затримки з постачанням матеріалів, можуть впливати на графік.
+                  Терміни будівництва залежать від конкретного проєкту. Зазвичай
+                  ми намагаємося завершити будівництво в обумовлені терміни,
+                  проте деякі фактори, такі як погодні умови або затримки з
+                  постачанням матеріалів, можуть впливати на графік.
                 </p>
               </div>
             </li>
             <li class="item">
               <div class="item-container">
                 <h4 class="item-title">
-                  Чи можна здійснити індивідуалізовані зміни у плануванні будинку?
+                  Чи є можливість отримати іпотечний кредит для придбання житла
+                  у вашої компанії?
                 </h4>
-                <button class="toogle-button" type="button">+</button>
+                <button class="toggle-button" type="button">
+                  <svg class="icon-toggle">
+                    <use href="./images/sprite.svg#icon-faq-arrow"></use>
+                  </svg>
+                </button>
               </div>
+              <div class="line"></div>
               <div class="item-answer">
                 <p class="answer-text">
-                  Терміни будівництва залежать від конкретного проєкту. Зазвичай ми намагаємося завершити будівництво в обумовлені терміни, проте деякі фактори, такі як погодні умови або затримки з постачанням матеріалів, можуть впливати на графік.
-                </p>
-              </div>
-            </li>
-            <li class="item">
-              <div class="item-container">
-                <h4 class="item-title">
-                  Чи є можливість отримати іпотечний кредит для придбання житла у вашої компанії?
-                </h4>
-                <button class="toogle-button" type="button">+</button>
-              </div>
-              <div class="item-answer">
-                <p class="answer-text">
-                  Терміни будівництва залежать від конкретного проєкту. Зазвичай ми намагаємося завершити будівництво в обумовлені терміни, проте деякі фактори, такі як погодні умови або затримки з постачанням матеріалів, можуть впливати на графік.
+                  Терміни будівництва залежать від конкретного проєкту. Зазвичай
+                  ми намагаємося завершити будівництво в обумовлені терміни,
+                  проте деякі фактори, такі як погодні умови або затримки з
+                  постачанням матеріалів, можуть впливати на графік.
                 </p>
               </div>
             </li>
@@ -278,48 +410,60 @@
       <section class="request">
         <div class="container">
           <div class="text-box">
-            <h2 class="title">Не чекайте, дізнайтеся всі переваги вашого майбутнього житла прямо зараз!</h2>
-            <p class="description">Запишіться на безкоштовний огляд будинку від "Лінії Будівництва" і переконайтеся в його якості та комфорті особисто</p>
+            <h2 class="title">
+              Не чекайте, дізнайтеся всі переваги вашого майбутнього житла прямо
+              зараз!
+            </h2>
+            <p class="description">
+              Запишіться на безкоштовний огляд будинку від "Лінії Будівництва" і
+              переконайтеся в його якості та комфорті особисто
+            </p>
           </div>
           <div class="form-box">
             <form class="form">
-              <input class="form-input" type="text" placeholder="Ваше ім'я">
-              <input class="form-input" type="text" placeholder="Ваш телефон">
-              <button type="submit" class="submit-button">
-                Звернутися
-              </button>
+              <input class="form-input" type="text" placeholder="Ваше ім'я" />
+              <input class="form-input" type="text" placeholder="Ваш телефон" />
+              <button type="submit" class="submit-button">Звернутися</button>
             </form>
           </div>
         </div>
       </section>
+
+      <div class="menu-container js-menu-container"></div>
     </main>
 
     <footer class="footer">
       <div class="container">
         <div class="info">
-          <div class="logo">
-            <p class="logo-main">Line</p>
-            <p class="logo-text">Lorem ipsum dolor sit</p>
-          </div>
+          <a href="./index.html" class="logo">
+            <img
+              src="./images/logo-desktop.png"
+              alt=""
+              width="188"
+              height="61"
+            />
+          </a>
           <a class="info-link">Договір публічної оферти</a>
           <a class="info-link">Політика конфіденційності</a>
-          <p class="copyright">© 2024 Лінія Будівництва<br/>
-            Всі права захищені</p>
+          <p class="copyright">
+            © 2024 Лінія Будівництва<br />
+            Всі права захищені
+          </p>
         </div>
         <div class="navigation">
           <p class="title">Навігація</p>
           <ul class="list">
             <li class="item">
-              <a href="#">Про компанію</a>
+              <a href="./about-company.html">Про компанію</a>
             </li>
             <li class="item">
-              <a href="#">Каталог</a>
+              <a href="./catalog.html">Каталог</a>
             </li>
             <li class="item">
-              <a href="#">Блог</a>
+              <a href="./news.html">Блог</a>
             </li>
             <li class="item">
-              <a href="#">Контакти</a>
+              <a href="">Контакти</a>
             </li>
           </ul>
         </div>
@@ -329,13 +473,33 @@
           <a href="#" class="number-link">+380 98 000 0000</a>
           <p class="soc-media-title">Наші соціальні мережі</p>
           <ul class="soc-media-list">
-            <li><a href="#" class="item"></a></li>
-            <li><a href="#" class="item"></a></li>
-            <li><a href="#" class="item"></a></li>
+            <li>
+              <a href="#" class="item">
+                <svg class="soc-icon">
+                  <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item">
+                <svg class="soc-icon">
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item">
+                <svg class="soc-icon telegram">
+                  <use href="./images/sprite.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
         </div>
         <div class="map">Карта</div>
       </div>
     </footer>
+
+    <script src="./js/faq-toggle.js"></script>
   </body>
 </html>
