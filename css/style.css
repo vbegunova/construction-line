@@ -1984,6 +1984,11 @@ body {
   overflow-x: auto;
 }
 
+/* .about_company-about_us .gallery-box::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+} */
+
 @media screen and (min-width: 1440px) {
   .about_company-about_us .gallery-box {
     margin-bottom: 76px;
@@ -1998,6 +2003,7 @@ body {
 @media screen and (min-width: 1440px) {
   .about_company-about_us .gallery {
     width: 1795px;
+    /* margin-left: -140px; */
   }
 }
 
